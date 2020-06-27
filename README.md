@@ -1,7 +1,7 @@
 # prohack-2020
 Solution of PROHACK 2020 ML competition at [prohack.org](prohack.org).
 
-This is quite simple solution, that uses only the structure of answers on train time-series, and doesn't use any of the provided features. The main idea is to find similar galaxies in train (I used KNN on differences), and to average differences in their answers to predict difference in answers for galaxies in test. Optimization part played a great role, since some delution of allocation around border allowed me to increase score on public dataset from around 0.045 (when I allocated 100z DSML to every galaxy in top 500 by their potential) to around 0.0215.
+This is quite simple solution, that uses only the structure of answers on train time-series, and doesn't use any of the provided features. The main idea is to find similar galaxies in train (I used KNN on differences), and to average differences in their answers to predict difference in answers for galaxies in test. Optimization part played a great role, since some dilution of allocation around border allowed me to increase score on public dataset from around 0.045 (when I allocated 100z DSML to every galaxy in top 500 by their potential) to around 0.0215.
 
 All of this allowed me to take 4th place on private leaderboard.
 
